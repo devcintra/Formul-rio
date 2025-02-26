@@ -11,4 +11,4 @@ Este é um **formulário simples e responsivo** desenvolvido com **HTML e CSS**.
 - Layout responsivo para diferentes dispositivos  
 - Design simples e intuitivo  
 
-🔗 **[https://devcintra.github.io/Formul-rio/](#)** 
+🔗 **[https://devcintra.github.io/Formulario-Simples/](#)** 
