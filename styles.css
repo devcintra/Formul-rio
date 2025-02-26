@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(222, 202, 240); /* Define a cor de fundo da página */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Define a fonte principal */
+    font-size: large;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+}
+
+
+
+h1, h2, h3, h4 {
+    color: #333; /* Define a cor do texto para tons de cinza escuro */
+}
+
+span{
+    color: #ff0000;
+}
+
+input {
+    border: none; /* Remove as bordas padrão dos inputs */
+    border-bottom: 1px solid #ccc; /* Adiciona apenas uma borda inferior */
+    padding: 10px 0; /* Adiciona um espaçamento interno vertical */
+}
+
+.conteudo label[for]{
+    display: block;
+    margin-top: 20px;
+}
+
+
+
+.box-input label{
+    display: block;
+    margin: 20px;
+    font-size: larger;
+}
+
+input[type="radio"]{
+    margin: 20px;
+}
+
+
+
+label[for=automatico], label[for=manual]{
+    display: inline-flex;
+    margin: -10px;
+    font-size: large;
+}
+
+
+input[type="text"], input[type="number"], input[type="date"], input[type="file"], textarea{
+    width: 400px;
+    display: block;
+    margin-top: 20px; 
+    font-size: medium;
+}
+
+
+/* cabeçario */
+
+.header {
+    height: 160px; /* Define a altura do cabeçalho */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: #673ab7; /* Define um fundo roxo */
+    font-size: x-large;
+}
+
+.header h3 {
+    color: #fff; /* Deixa o texto branco para contraste */
+    margin-top: 0; /* Remove qualquer margem superior */
+}
+
+
+form {
+   
+    background-color: #fff; /* Fundo branco para destaque */
+    width: 60%; /* Ocupa 50% da largura da tela */
+    margin-left: 20%; /* Define um deslocamento à esquerda */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    position: relative; /* Permite ajustar a posição do elemento */
+    top: -62px; /* Move o formulário um pouco para cima */
+}
+
+
+.form-container {
+    border-bottom: 1px solid #dfdfdf; /* Adiciona uma borda inferior */
+    height: 45px; /* Define uma altura fixa */
+}
+
+
+.form-container p {
+    text-align: center; /* Centraliza o texto */
+    color: #673ab7; /* Define a cor do texto */
+    border-bottom: 2px solid #673ab7; /* Adiciona uma borda inferior roxa */
+    width: 100px; /* Define a largura do parágrafo */
+    margin: 0px auto; /* Centraliza horizontalmente */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    height: 45px; /* Define uma altura fixa */
+    line-height: 45px; /* Centraliza o texto verticalmente */
+}
+
+.conteudo{
+    margin: 20px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+}
+
+.optional-box{
+    display: inline-block;
+    margin: 0px 30px 30px 0px;
+
+}
+
+.optional-box p{
+    margin: 20px ; /* Centraliza horizontalmente */
+    font-size: larger;
+}
+
+.optional-box li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+
+.file{
+    margin: 20px;
+    font-size: larger;
+}
+
+.button{
+    margin: 30px;
+    position: relative;
+    bottom: 10px;
+}
+
+.button button{
+    margin: 20px 0px 20px 0px; 
+    background-color: #673ab7;
+    color: #fff;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: larger;
+    cursor: pointer;
+}
+

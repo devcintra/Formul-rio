@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <h3>Cadastre seu veículo para vender mais rápido!</h3>
+  </div>
+
+  <main>
+    <form>
+      <div class="form-container">
+        <p>FORMULÁRIO</p>
+      </div>
+
+      <div class="conteudo">
+        <h1>Venda fácil seu carro!</h1>
+        <p>Descreva as características e marque os opcionais que ele possui</p>
+
+        <!-- Dados do carro -->
+        <label for="titulo">Título para anunciar seu carro: <span>*</span></label>
+        <input type="text" id="titulo" name="titulo" required placeholder="Um título para anunciar seu carro" minlength="5" maxlength="100">
+
+        <!-- Preço -->
+        <label for="preco">Preço: <span>*</span></label>
+        <input type="number" id="preco" name="preco" required placeholder="Defina o preço" minlength="1" maxlength="15">
+
+        <!-- Descrição do carro -->
+        <label for="descricao">Descrição: <span>*</span></label>
+        <textarea name="descricao" id="descricao" required placeholder="Descreva as características do seu carro" minlength="10" maxlength="500"></textarea>
+
+        <!-- Marca do Carro -->
+        <label for="marca">Marca: <span>*</span></label>
+        <input type="text" id="marca" name="marca" required placeholder="Digite a marca do carro" minlength="2" maxlength="50" list="marcas">
+        <datalist id="marcas">
+          <option value="Toyota">
+          <option value="Honda">
+          <option value="Ford">
+          <option value="Chevrolet">
+          <option value="BMW">
+          <option value="Mercedes-Benz">
+          <option value="Audi">
+          <option value="Volkswagen">
+          <option value="Hyundai">
+          <option value="Nissan">
+        </datalist>
+
+        <!-- Modelo do Carro -->
+        <label for="modelo">Modelo: <span>*</span></label>
+        <input type="text" id="modelo" name="modelo" required placeholder="Digite o modelo do carro" minlength="2" maxlength="50" list="modelos">
+        <datalist id="modelos">
+          <option value="Corolla">
+          <option value="Civic">
+          <option value="Mustang">
+          <option value="Camaro">
+          <option value="320i">
+          <option value="C-Class">
+          <option value="A4">
+          <option value="Golf">
+          <option value="Elantra">
+          <option value="Altima">
+        </datalist>
+
+        <!-- Quilometragem -->
+        <label for="km">Quilometragem: <span>*</span></label>
+        <input type="number" id="km" name="km" required placeholder="Digite a quilometragem do carro" minlength="1" maxlength="30">
+
+        <!-- Data da compra -->
+        <label for="data">Data de compra: <span>*</span></label>
+        <input type="date" id="data" name="data" required>
+      </div>
+
+      <div class="box-input">
+        <!-- Tipo de câmbio -->
+        <label for="cambio">Tipo de câmbio: <span>*</span></label>
+        <input type="radio" id="automatico" name="cambio" value="automático">
+        <label for="automatico">Automático</label>
+        <input type="radio" id="manual" name="cambio" value="manual">
+        <label for="manual">Manual</label>
+      </div>
+
+      <!-- Opcionais -->
+      <div class="optional-box">
+        <p>Opcionais: <span>*</span></p>
+        <ul class="opational-list">
+          <li>
+            <input type="checkbox" id="ar_condicionado" name="opcionais" value="Ar condicionado">
+            <label for="ar_condicionado">Ar condicionado</label>
+          </li>
+          <li>
+            <input type="checkbox" id="direcao_hidraulica" name="opcionais" value="Direção hidráulica">
+            <label for="direcao_hidraulica">Direção hidráulica</label>
+          </li>
+          <li>
+            <input type="checkbox" id="vidros_eletricos" name="opcionais" value="Vidros elétricos">
+            <label for="vidros_eletricos">Vidros elétricos</label>
+          </li>
+          <li>
+            <input type="checkbox" id="travas_eletricas" name="opcionais" value="Travas elétricas">
+            <label for="travas_eletricas">Travas elétricas</label>
+          </li>
+        </ul>
+      </div>
+      <div class="optional-box">
+        <ul class="optional-list">
+          <li>
+            <input type="checkbox" id="lane_assist" name="optional[]" value="lane_assist" />
+            <label for="lane_assist">Assistente de Pista</label>
+          </li>
+          <li>
+            <input type="checkbox" id="keyless" name="optional[]" value="keyless" />
+            <label for="keyless">Partida Keyless</label>
+          </li>
+          <li>
+            <input type="checkbox" id="smartphone" name="optional[]" value="smartphone" />
+            <label for="smartphone">Integração com Celular</label>
+          </li>
+          <li>
+            <input type="checkbox" id="leather_seat" name="optional[]" value="leather_seat" />
+            <label for="leather_seat">Banco de Couro</label>
+          </li>
+        </ul>
+      </div>
+      <div class="file">
+        <!-- Foto do veículo -->
+        <label for="file">Foto do veículo: <span>*</span></label>
+        <input type="file" name="file" id="file">
+      </div>
+      <div class="button">
+        <!-- Botão de envio -->
+        <button type="submit">Cadastrar</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
